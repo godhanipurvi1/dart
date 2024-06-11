@@ -23,6 +23,7 @@ int update(int updateind ,int updateele)
   l[updateind]=updateele;
   return updateele;
 }
+
 int delete(int deleteind) => l.removeAt(deleteind);
 
 void main(){
