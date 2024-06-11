@@ -11,16 +11,30 @@ void create()
         l.add(number);
 
   }
+  print("$l");
 }
 void read()
 {
   print("List: $l");
 }
-int update(int updateind,int updateele) => l[updateind]=(updateele);
+void update()
+{
+print("enter a number of the index to update:");
+  int updateind=int.parse(stdin.readLineSync()??"0");
 
-int delete(int deleteind)=> l.removeAt(deleteind);
+  print("enter a number of the element to update:");
+  int updateele=int.parse(stdin.readLineSync()??"0");
+
+  l[updateind]=updateele;
+}
+void delete()
+{
+  print("enter a number of the index to delete:");
+  int deleteind=int.parse(stdin.readLineSync()??"0");
+  l.removeAt(deleteind);
+  }
 void main(){
-    int choice=0;
+    int choice=1;
     
     do{
       print("enter 1 for CREAT\nenter 2 for READ\nenter 3 for UPDATE\nenter 4 for DELETE\nenter 5 for EXIT");
@@ -34,10 +48,10 @@ void main(){
         read();
         break;
         case 3:
-        update(0,5);
+        update()  ;
         break;
         case 4:
-        delete(0);
+        delete();
         break;
         case 5:
         print("exiting....");
