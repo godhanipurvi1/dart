@@ -24,7 +24,7 @@ int update(int updateind ,int updateele)
     return updateele;
   }
 
-  
+
 int delete(int deleteind) => l.removeAt(deleteind);
 
 void main(){
@@ -53,6 +53,7 @@ void main(){
           int r=update(updateind ,updateele);
 
         break;
+        
         case 4:
           print("enter a number of the index to delete:");
           int dind=int.parse(stdin.readLineSync()??"0");
