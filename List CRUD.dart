@@ -14,16 +14,17 @@ void create()
 }
 
 void read()
-{
-  print("List: $l");
-}
+  {
+    print("List: $l");
+  }
 
 int update(int updateind ,int updateele)
-{
-  l[updateind]=updateele;
-  return updateele;
-}
+  {
+    l[updateind]=updateele;
+    return updateele;
+  }
 
+  
 int delete(int deleteind) => l.removeAt(deleteind);
 
 void main(){
